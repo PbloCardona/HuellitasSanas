@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Logo.webp">
+    <link rel="stylesheet" href="styes.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Cuidado Mascotas - Tip 3</title>
+</head>
+
+<body>
+    <div class="container-fluid navbarBg_secondary">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <img src="Logo.webp" alt="vete" class="img-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cuidados.html">Cuidado De Tu Mascota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Nuestro Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active2" href="https://api.whatsapp.com/send/?phone=573225133771"><i class="fab fa-whatsapp" ></i> Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Fin navbar-->
+
+    <div class="container-bottom">
+        <button type="button" class="btn btn-primary btn-tips" onclick="bck_tip()">Tip Anterior</button>
+        <button type="button" class="btn btn-primary btn-tips" onclick=volver()>Ver Más Tips</button>
+        <button type="button" class="btn btn-primary btn-tips" onclick="sgt_tip()">Siguiente Tip</button>
+    </div>
+
+
+    <!--funcion botones-->
+    <script>
+        function sgt_tip() {
+            window.location.href = "tip4.html";
+        }
+        function volver() {
+        window.location.href = "cuidados.html";
+        }
+        function bck_tip() {
+            window.location.href = "tip2.html";
+        }
+    </script>
+    <!--funcion botones-->
+
+
+
+    <!--tip-->
+
+    <div class="container-services text-center">
+
+
+        <div class="card mb-3" style="max-width: 1020px; margin-top: 20px;">
+            <div class="row g-0 g-0 justify-content-center align-items-center">
+                <div class="col-md-10">
+                    <img src="img/tips (3).jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title-services" style="font-size: 35px;">¡Cuidados para el bienestar de tu Gato!
+                            🐱🐅</h5>
+                        <p class="card-text"> > El cuidado del pelaje (cepillado) contribuye a que el gato tenga
+                            bienestar y salud < 🔅Cepilla a tu gato para eliminar el pelo muerto y así evita que este
+                                ingiera una cantidad excesiva del mismo al asearse. *La eliminación fecal de los pelos
+                                ingeridos puede representar un volumen diario de 10 cm³ para un gato de 4 kg. 🔅Este
+                                cuidado implica el consante cepillado, en donde el pelo debe ser desenredado con un
+                                peine y a continuación cepillado. Para el pelaje corto y liso como el de los Siameses o
+                                los Abisinios, lo único que se necesita es pasar suavemente la mano. Para el pelaje
+                                semilargo como el del Maine Coon o el Burnés, se requiere pasar un cepillo suave cada
+                                semana. Lo mismo ocurre con el pelaje corto con subpelo, como el del Exótico de Pelo
+                                Corto. 🔅El pelo es el reflejo de una dieta equilibrada. Un déficit de proteínas o la
+                                deficiencia de ciertos aminoácidos pueden acelerar la pérdida de pelaje, frenar su
+                                crecimiento y ser responsable de un pelaje sin brillo y quebradizo. La belleza natural
+                                del pelaje puede ser reforzada por una Nutrición Específica con elementos nutricionales
+                                indispensables para favorecer el crecimiento del pelo, su renovación y brillo. Tomado
+                                de: Royal Canin. ¡Consentir a tu felino y velar por su bienestar es tu responsabilidad!
+                                🐾💚🌟 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fin tip-->
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fin scripts -->
+</body>
+<!-- footer -->
+<br><br><br>
+
+<footer class="text-center text-white" style="background-color: #aeb446;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- WhatsApp -->
+            <a class="btn btn-link btn-floating btn-sm text-dark m-1"
+                href="https://api.whatsapp.com/send/?phone=573225133771" role="button" data-mdb-ripple-color="dark"><i
+                    class="fab fa-whatsapp"></i></a>
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-sm text-dark m-1"
+                href="https://www.instagram.com/clinicaveterinariademedellin/?hl=es-la" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-sm text-dark m-1"
+                href="https://www.facebook.com/clinicaveterinariademedellin/" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+
+
+    <!-- Copyright -->
+    <div class="text-center text-secondary p-3" style="background-color: #002325">
+        © 2023 Copyright: Pablo Cardona
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- End of .container -->
+
+</html>
