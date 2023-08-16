@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="Logo.webp">
+  <link rel="icon" type="image/x-icon" href="./Perros y gatos/ico.png">
   <link rel="stylesheet" href="styes.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
@@ -17,13 +17,14 @@
 
 </head>
 
-<body>
+<body class="color-bg-body">
   <div class="container-fluid">
     <div class="container-fluid navbarBg">
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <img src="Logo.webp" alt="vete" class="img-logo">
-
+          <!--
+          <img src="./Perros y gatos/logo.png" alt="vete" class="img-logo">
+--> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -76,11 +77,13 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/img3.png" class="d-block w-100" alt="...">
+          <img src="./Perros y gatos/banner.jpg" width="100%" class="d-block " alt="...">
         </div>
+      <!--
         <div class="carousel-item">
           <img src="img/img4.png" class="d-block w-100" alt="...">
         </div>
+      -->
       </div>
     </div>
   </div>
@@ -91,14 +94,14 @@
 
   <!-- info section -->
   <br>
-  <div class="text_info">
-    <h1 style="font-weight: bolder ;">Clínica Veterinaria
+  <div class="text_info titulo_principal">
+    <h1 style="font-weight: bolder ;">Huellitas Sanas
     </h1>
-    <h3> de Medellín</h3><br>
+    <h3 class="titulo_principal"> Clinica Veterinaria</h3><br>
     <p>
       Como Clínica Veterinaria de Medellín ponemos a tu disposición el mejor servicio veterinario las 24 horas del día.
-      <br>Ofrecemos asesorías preventivas, consulta general y especializada, cirugías, imagenología (radiografías,
-      ecografías), servicio de urgencias, hospitalización, entre otros. <br> Buscamos brindarte la mejor experiencia
+      <br>Ofrecemos consulta general y especializada, cirugías, imagenología (radiografías,
+      ecografías), servicio de urgencias, hospitalización y nos enfocamos en la prevención de enfermedades físicas y mentales. <br> Buscamos brindarte la mejor experiencia
       respaldados de la mejor calidad, alta tecnología y la más excelente atención.
     </p>
     <br>
@@ -114,8 +117,8 @@
 
   <br><br><br><br>
   <!--boton wpp-->
-  <div class="text-center">
-    <h3 class="sub_titulo2" style="font-size: 45px;">¡Brindamos Atención 24HRS!</h3> <br>
+  <div class="text-center ">
+    <h3 class="sub_titulo2 " style="font-size: 45px;">¡Brindamos Atención 24HRS!</h3> <br>
     <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bold;">
       <i class="fab fa-whatsapp"></i> Escribenos
     </button>
@@ -130,6 +133,8 @@
   </script>
   <!--funcion boton-->
   </div>
+
+  
   <!--boton wpp-->
 
   <br><br><br>
@@ -137,7 +142,7 @@
 
   <p></p>
   <div class="text-center">
-  <h2 style="font-size: larger; font-weight: bolder;"> ¡Estos Son Algunos Tips Infalibles Para Cuidar a Tu Mascota Siempre!</h2>
+  <h2 class="tips_color" style="font-size: larger; font-weight: bolder;"> ¡Estos Son Algunos Tips Infalibles Para Cuidar a Tu Mascota Siempre!</h2>
 </div>
   </p>
   <br>
@@ -147,31 +152,31 @@
 
 
     <div class="card1" style="width: 18rem;">
-      <img src="img/tips (6).jpg" class="card-img-top" alt="...">
+      <img src="./Perros y gatos/1.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
-        <p class="card-text">¿Cómo evitar el temido golpe de calor en mi mascota?</p>
+        <p class="card-text card-color">¿Cómo evitar el temido golpe de calor en mi mascota?</p>
         <a href="tip6.html" class="btn btn-primary">Leer Más</a>
       </div>
     </div>
 
 
     <div class="card1" style="width: 18rem;">
-      <img src="img/tips (2).jpg" class="card-img-top" alt="...">
+      <img src="./Perros y gatos/5.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
 
-        <p class="card-text">¡Entrenando a mi perro! ¿Una tarea fácil?</p>
+        <p class="card-text card-color">¡Entrenando a mi perro! ¿Una tarea fácil?</p>
         <a href="tip2.html" class="btn btn-primary">Leer Más</a>
       </div>
     </div>
 
     <div class="card1" style="width: 18rem;">
-      <img src="img/tips (3).jpg" class="card-img-top" alt="...">
+      <img src="./Perros y gatos/4.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
 
-        <p class="card-text">¡Cuidados para el bienestar de tu Gato! </p>
+        <p class="card-text card-color">¡Cuidados para el bienestar de tu Gato! </p>
         <a href="tip3.html" class="btn btn-primary">Leer Más</a>
       </div>
     </div>
@@ -188,11 +193,9 @@
 
 </body>
 <br><br><br>
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<footer class="text-center text-white" style="background-color: #aeb446;">
-  <!-- Grid container -->
+
+<footer class="text-center text-white" style="background-color: #e2a66a;">
   <div class="container pt-4">
-    <!-- Section: Social media -->
     <section class="mb-4">
       <!-- WhatsApp -->
       <a class="btn btn-link btn-floating btn-sm text-dark m-1" href="https://api.whatsapp.com/send/?phone=573225133771"
@@ -205,21 +208,10 @@
       <a class="btn btn-link btn-floating btn-sm text-dark m-1"
         href="https://www.facebook.com/clinicaveterinariademedellin/" role="button" data-mdb-ripple-color="dark"><i
           class="fab fa-facebook-f"></i></a>
-
-
     </section>
-    <!-- Section: Social media -->
   </div>
-  <!-- Grid container -->
-
-
-
-  <!-- Copyright -->
-  <div class="text-center text-secondary p-3" style="background-color: #002325">
+  <div class="text-center text-secondary p-3" style="background-color: #421f0b">
     © 2023 Copyright: Pablo Cardona
   </div>
-  <!-- Copyright -->
 </footer>
-<!-- End of .container -->
-
 </html>

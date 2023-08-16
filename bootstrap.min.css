@@ -4384,7 +4384,7 @@ fieldset:disabled .btn {
     font-size: var(--bs-nav-link-font-size);
     font-weight: var(--bs-nav-link-font-weight);
     /*color de texto de las opciones en el navbar*/
-    color: #3d7676;
+    color: #cfb0a6;
     /*color de texto de las opciones en el navbar*/
     text-decoration: none;
     background: 0 0;
@@ -4535,10 +4535,10 @@ fieldset:disabled .btn {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
     --bs-navbar-color: #7b8ab8;
-    --bs-navbar-hover-color: #1fa29b;
+    --bs-navbar-hover-color: #fbf0de;
     --bs-navbar-disabled-color: #adb6d3;
     /*color indicador pagina activa/pagina actual*/
-    --bs-navbar-active-color: #1fa29b;
+    --bs-navbar-active-color: #fbf0de;
     /*color indicador pagina activa/pagina actual*/
     --bs-navbar-brand-padding-y: 0.3125rem;
     --bs-navbar-brand-margin-end: 1rem;
@@ -4618,15 +4618,15 @@ fieldset:disabled .btn {
 .nav-link.active{
     font-weight: bold;
     text-decoration-line: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: dashed;
     text-decoration-skip-ink: none;
     padding-bottom: 2px;
-    text-decoration-color: #aeb446;
+    text-decoration-color: #e2a66a;
 }
 .nav-link.active2{
     font-weight: bold;
     padding-bottom: 2px;
-    color: #1fa29b;
+    color: #fbf0de;
 
 }
 
@@ -5074,7 +5074,7 @@ fieldset:disabled .btn {
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    --bs-card-bg: #e4ebf5;
+    --bs-card-bg: #f7ecd8;
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
@@ -5082,7 +5082,7 @@ fieldset:disabled .btn {
     flex-direction: column;
     min-width: 0;
     height: var(--bs-card-height);
-    color: var(--bs-body-color);
+    color: #421f0b;
     word-wrap: break-word;
     background-color: var(--bs-card-bg);
     background-clip: border-box;
@@ -13982,9 +13982,9 @@ fieldset:disabled .btn {
     position: relative;
 
     
-    color: #3d7676;
+    color: #421f0b;
     border-radius: 50rem;
-    background-color: #c8ce65;
+    background-color: #e2a66a;
     box-shadow: 5px 5px 10px rgba(55, 94, 148, .2), -5px -5px 10px rgba(255, 255, 255, .4);
     transition: background-color .15s ease-in-out, border .15s ease-in-out, box-shadow .15s ease-in-out, color .15s ease-in-out
 
@@ -14002,8 +14002,8 @@ fieldset:disabled .btn {
     border: none;
     box-shadow: 5px 5px 10px rgba(55, 94, 148, .2), -5px -5px 10px rgba(255, 255, 255, .4);
     transition: background-color .15s ease-in-out, border .15s ease-in-out, box-shadow .15s ease-in-out, color .15s ease-in-out;
-    background-color: #3d7676;
-    color: #c8ce65
+    background-color: #421f0b;
+    color: #e2a66a
 }
 
 .btn:active,
