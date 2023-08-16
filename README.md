@@ -1,4 +1,4 @@
-# HuellitasSanas
+# Huellitas Sanas
 En nuestra clínica, no solo cuidamos a tu mascota, sino también a ti, porque entendemos que ser dueño de una
 mascota va más allá de los chequeos médicos. Somos tu compañero y guía en cada etapa de la vida de tu peludo
 amigo. Nuestro enfoque va más allá de la atención médica; te ofrecemos un equipo de expertos apasionados que te
