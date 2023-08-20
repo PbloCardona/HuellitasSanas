@@ -103,16 +103,16 @@ background-color: #fbf0de;
 }
 .card1 {
     width: 18rem;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agrega transiciones suaves */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
 
   .card1:hover {
-    transform: scale(1.05); /* Escala un 5% más grande al hacer hover */
-    opacity: 0.8; /* Opacidad reducida al hacer hover */
+    transform: scale(1.05);
+    opacity: 0.8;
   }
 
   .card-img-top {
-    max-width: 100%; /* Para asegurarse de que la imagen no se salga de la tarjeta */
+    max-width: 100%;
   }
 
 .imgs_articulo {
