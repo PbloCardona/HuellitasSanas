@@ -89,12 +89,10 @@ background-color: #fbf0de;
     text-align: center;
     margin: 18px;
 }
-
 .text_info>h1 {
     font-family: "Hamburger-Regular";
     font-size: 85px;
 }
-
 .text_info>p {
     font-size: 25px;
     margin-right: 180px;
@@ -105,12 +103,10 @@ background-color: #fbf0de;
     width: 18rem;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-
 .card1:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
-
 .card-img-top {
     max-width: 100%;
 }
@@ -119,11 +115,9 @@ background-color: #fbf0de;
     display: flex;
     justify-content: center;
 }
-
 .imgArt {
     margin-left: 7px;
 }
-
 .sub_titulo {
     font-weight: bold;
     font-size: 27px;
