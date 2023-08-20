@@ -104,16 +104,16 @@ background-color: #fbf0de;
 .card1 {
     width: 18rem;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
+}
 
-  .card1:hover {
+.card1:hover {
     transform: scale(1.05);
     opacity: 0.8;
-  }
+}
 
-  .card-img-top {
+.card-img-top {
     max-width: 100%;
-  }
+}
 
 .imgs_articulo {
     display: flex;
