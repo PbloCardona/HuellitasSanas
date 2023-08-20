@@ -101,7 +101,19 @@ background-color: #fbf0de;
     margin-left: 180px;
     font-family: "Comfortaa", sans-serif;
 }
+.card1 {
+    width: 18rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agrega transiciones suaves */
+  }
 
+  .card1:hover {
+    transform: scale(1.05); /* Escala un 5% más grande al hacer hover */
+    opacity: 0.8; /* Opacidad reducida al hacer hover */
+  }
+
+  .card-img-top {
+    max-width: 100%; /* Para asegurarse de que la imagen no se salga de la tarjeta */
+  }
 
 .imgs_articulo {
     display: flex;
