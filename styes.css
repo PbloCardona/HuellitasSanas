@@ -105,6 +105,10 @@ background-color: #ffebda;
     transform: scale(1.05);
     opacity: 0.8;
 }
+.services_card:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
 .card2 {
     width: 18rem;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -127,11 +131,16 @@ background-color: #ffebda;
 .sub_titulo {
     font-weight: bold;
     font-size: 27px;
-    text-decoration: underline;
-    text-decoration-color: var(--color3);
 
 }
+.underline{
+    font-weight: bold;
+    font-size: 27px;
+    text-decoration: underline;
 
+    text-decoration-color: var(--color3);
+    color: var(--color1)
+}
 .sub_titulo2 {
     font-weight: bold;
     font-size: 27px;
