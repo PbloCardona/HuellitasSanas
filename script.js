@@ -8,6 +8,7 @@ window.addEventListener("scroll", function () {
 
     
 });
+AOS.init();
 
 
 

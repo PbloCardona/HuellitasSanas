@@ -21,7 +21,7 @@
     font-family: 'Roboto', sans-serif;
 }
 .color-bg-body{
-background-color: #fbf0de;
+background-color: #ffebda;
 }
 .color_background {
     background-color: var(--color2);
@@ -58,6 +58,7 @@ background-color: #fbf0de;
 }
 */
 
+  
 .div>ul {
     color: black;
 }
@@ -71,9 +72,6 @@ background-color: #fbf0de;
 
 .navbar a:hover {
     font-weight: bold;
-
-    text-decoration: underline;
-    text-decoration-style: dashed;
     text-decoration-color: #e2a66a;
     text-decoration-skip-ink: auto;
 }
@@ -104,6 +102,14 @@ background-color: #fbf0de;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .card1:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+.card2 {
+    width: 18rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.card2:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
@@ -479,6 +485,8 @@ z-index: 1;}
     }
 
 }
+
+
 
 /*
     @media screen and (min-width: 820px) and (max-width: 1080px) {
