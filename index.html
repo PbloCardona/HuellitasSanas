@@ -46,7 +46,7 @@
               <a class="nav-link " href="team.html">Nuestro Equipo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active2" href="https://api.whatsapp.com/send/?phone=573042721866"><i
+              <a class="nav-link active2" target="_blank" href="https://api.whatsapp.com/send/?phone=573042721866"><i
                   class="fab fa-whatsapp"></i> Contáctanos</a>
             </li>
           </ul>
@@ -203,7 +203,7 @@
   <div data-aos="zoom-in" data-aos-duration="800"  class="text-center ">
     <h3 class="sub_titulo2 " style="font-size: 45px;">¡Brindamos Atención 24HRS!</h3> <br>
     <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bold;">
-      <i class="fab fa-whatsapp"></i> Escribenos
+      <i class="fab fa-whatsapp" ></i> Escribenos
     </button>
   </div>
   <br>
@@ -212,7 +212,7 @@
   <!--funcion boton-->
   <script>
     function agendarCita() {
-      window.location.href = "https://api.whatsapp.com/send/?phone=573042721866";
+       window.open("https://api.whatsapp.com/send/?phone=573042721866","_blank")
     };
   </script>
   <!--funcion boton-->
@@ -246,14 +246,14 @@
     <section class="mb-4">
       <!-- WhatsApp -->
       <a class="btn btn-link btn-floating btn-sm text-dark m-1" href="https://api.whatsapp.com/send/?phone=573042721866"
-        role="button" data-mdb-ripple-color="dark"><i class="fab fa-whatsapp"></i></a>
+        role="button" target="_blank"data-mdb-ripple-color="dark"><i class="fab fa-whatsapp"></i></a>
       <!-- Instagram -->
       <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-        href="./blank_page.html" role="button"
+        href="./blank_page.html" role="button" target="_blank"
         data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
       <!-- Facebook -->
       <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-        href="./blank_page.html" role="button" data-mdb-ripple-color="dark"><i
+        href="./blank_page.html" target="_blank" role="button" data-mdb-ripple-color="dark"><i
           class="fab fa-facebook-f"></i></a>
     </section>
   </div>
