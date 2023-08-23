@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./img/ico.png">
-  <link rel="stylesheet" href="styes.css">
+
   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styes.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
@@ -22,7 +23,10 @@
   <div class="container-fluid navbarBg_secondary ">
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <img src="./img/huellitas.png" alt="vete" class="img-logo">
+        <a href="index.html">
+          <img src="./img/huellitas.png" alt="veterinaria_logo" class="img-logo">
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -69,7 +73,17 @@
 
 
   <!-- carusel-->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-interval="2500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./img/banner-1.png" class="d-block w-100" alt="...">
@@ -84,31 +98,32 @@
         <img src="./img/banner-4.png" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </button>
+    </button> -->
   </div>
   <!-- carusel-->
 
 
 
-<br><br><br>
+  <br><br><br>
 
 
 
   <div class="text_info titulo_principal">
-    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" class="text_info titulo_principal">
-      <h3 class="sub_titulo">En Huellitas Sanas el bienestar de tu mascota <br></h3> <h3 class="underline"> ¡Es nuestra prioridad!</h3> <br>
-      <h4 class="tips_color " style="font-size: medium;;"> Estos son algunos tips infalibles para
-        cuidar a tu mascota siempre:</h4>
+    <div data-aos="zoom-in" data-aos-duration="500" data-aos-once="true" class="text_info titulo_principal">
+      <h3 class="sub_titulo" style="font-weight: bolder; font-size: 40px;">En Huellitas Sanas el bienestar de tu mascota <br></h3>
+      <h3 class="underline" style="font-weight: bolder;"> ¡Es nuestra prioridad!</h3>  <br><br>
+      <h4 class="tips_color underline" style="font-size: medium; font-weight: bold; margin-top: 30px;" > Estos son algunos tips infalibles para
+        siempre cuidar a tu mascota:</h4>
     </div>
   </div>
-<br>
+
 
   <!-- tips -->
 
@@ -122,7 +137,7 @@
   <div class="container_cards">
 
     <div class="card1" style="width: 18rem;">
-      <img data-aos="flip-left" data-aos-duration="1000" src="./img/tip5.png" class="card-img-top" alt="...">
+      <img data-aos="flip-left" data-aos-duration="800" data-aos-once="true"src="./img/tip5.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
 
@@ -132,7 +147,7 @@
     </div>
 
     <div class="card1" style="width: 18rem;">
-      <img data-aos="flip-left" data-aos-duration="1000" src="./img/tip1.png" class="card-img-top" alt="...">
+      <img data-aos="flip-left" data-aos-duration="800"data-aos-once="true" src="./img/tip1.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
         <p class="card-text card-color">¿Cómo evitar el temido golpe de calor en mi mascota?</p>
@@ -142,7 +157,7 @@
 
 
     <div class="card1" style="width: 18rem;">
-      <img data-aos="flip-left" data-aos-duration="1000" src="./img/tip4.png" class="card-img-top" alt="...">
+      <img data-aos="flip-left" data-aos-duration="800"data-aos-once="true"src="./img/tip4.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
 
@@ -156,18 +171,19 @@
 
 
 
-    <!-- info section -->
+  <!-- info section -->
   <div class="text_info titulo_principal">
     <div data-aos="fade-down" data-aos-duration="1500" class="text_info titulo_principal">
       <h1 style="font-weight: bolder ;">Huellitas Sanas </h1>
       <h3 class="titulo_principal"> Clinica Veterinaria</h3><br>
     </div>
-    <div data-aos="zoom-in" data-aos-duration="1000" class="text_info titulo_principal">
+    <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" class="text_info titulo_principal">
       <p>
 
         En nuestra clínica, no solo cuidamos a tu mascota, sino también a ti, porque entendemos que ser dueño de una
         mascota va más allá de los chequeos médicos, somos tu compañero y guía en cada etapa de la vida de tu peludo
-        amigo. <br> Nuestro enfoque va más allá de la atención médica; te ofrecemos un equipo de expertos apasionados que te
+        amigo. <br> Nuestro enfoque va más allá de la atención médica; te ofrecemos un equipo de expertos apasionados
+        que te
         acompañarán en la prevención de situaciones y en la construcción de un vínculo fuerte y duradero con tu mascota.
         <br>
         Tu satisfacción y la felicidad de tu compañero son nuestra prioridad, y estamos comprometidos a brindarte un
@@ -184,17 +200,17 @@
   <div class="imgs_articulo">
     <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="650" class="imgArt"
       src="img/img (11).jpg" class="img-fluid" alt="...">
-    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="750" class="imgArt"
+    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="600" class="imgArt"
       src="img/img (12).jpg" class="img-fluid" alt="...">
-    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="850" class="imgArt"
+    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="600" class="imgArt"
       src="img/img (3).jpg" class="img-fluid" alt="...">
-    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" class="imgArt"
+    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="650" class="imgArt"
       src="img/img (5).jpg" class="img-fluid" alt="...">
   </div>
 
   <br><br><br><br>
   <!--boton wpp-->
-  <div data-aos="zoom-in" data-aos-duration="1000"  class="text-center ">
+  <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="true" class="text-center ">
     <h3 class="sub_titulo2 " style="font-size: 45px;">¡Brindamos Atención 24HRS!</h3> <br>
     <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bold;">
       <i class="fab fa-whatsapp"></i> Escribenos
@@ -218,19 +234,18 @@
 
   <!-- scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-  // Agrega este script para habilitar el efecto de desvanecimiento
-  document.addEventListener("DOMContentLoaded", function() {
-    const carousel = document.getElementById("carouselExampleFade");
-    const carouselInstance = new bootstrap.Carousel(carousel, {
-      interval: 2000, // Ajusta el intervalo entre transiciones
-      pause: false,   // Evita que el carrusel se detenga cuando se pasa el mouse por encima
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carousel = document.getElementById("carouselExampleSlidesOnly");
+      const carouselInstance = new bootstrap.Carousel(carousel, {
+        interval: 3000,
+        pause: false,
+      });
     });
-  });
-</script>
+  </script>
   <!-- scripts -->
 
 </body>

@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Hamburger-Regular';
-    src: url(./Hamburger-Regular.ttf) format('truetype'); 
-  }
-  :root,
-  [esquema_colores=principal]{
+    src: url(./Hamburger-Regular.ttf) format('truetype');
+}
+:root,
+[esquema_colores=principal] {
     --color1: #421f0b;
     --color2: #fbf0de;
     --color3: #e2a66a;
     --color4: #cfb0a6;
-  }
+}
 
 .img-logo {
     border-radius: 50%;
@@ -20,14 +20,17 @@
 #body {
     font-family: 'Roboto', sans-serif;
 }
-.color-bg-body{
-background-color: #ffebda;
+
+.color-bg-body {
+    background-color: #ffebda;
 }
+
 .color_background {
     background-color: var(--color2);
 }
-:root{
-    --color-beige: 
+
+:root {
+    --color-beige:
 }
 
 .navbar-brand {
@@ -58,11 +61,13 @@ background-color: #ffebda;
 }
 */
 
-  
+
 .div>ul {
     color: black;
 }
-.tips_color, .card-color{
+
+.tips_color,
+.card-color {
     color: #421f0b;
 }
 
@@ -75,48 +80,59 @@ background-color: #ffebda;
     text-decoration-color: #e2a66a;
     text-decoration-skip-ink: auto;
 }
-.titulo_principal > h1{
+
+.titulo_principal>h1 {
     color: var(--color1)
 }
-.titulo_principal >  h3{
+
+.titulo_principal>h3 {
     color: var(--color1)
 }
+
 .text_info {
     color: black;
     font-size: 125%;
     text-align: center;
     margin: 18px;
 }
+
 .text_info>h1 {
     font-family: "Hamburger-Regular";
     font-size: 85px;
 }
+
 .text_info>p {
     font-size: 25px;
     margin-right: 180px;
     margin-left: 180px;
     font-family: "Comfortaa", sans-serif;
 }
+
 .card1 {
     width: 18rem;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 .card1:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
-.services_card:hover{
+
+.services_card:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
+
 .card2 {
     width: 18rem;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 .card2:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
+
 .card-img-top {
     max-width: 100%;
 }
@@ -125,15 +141,23 @@ background-color: #ffebda;
     display: flex;
     justify-content: center;
 }
+
 .imgArt {
     margin-left: 7px;
 }
+.imgs_services{
+    width: 35%;
+    margin-top: 25px !important;
+    margin-bottom: 25px;
+}
+
 .sub_titulo {
     font-weight: bold;
     font-size: 27px;
 
 }
-.underline{
+
+.underline {
     font-weight: bold;
     font-size: 27px;
     text-decoration: underline;
@@ -141,6 +165,7 @@ background-color: #ffebda;
     text-decoration-color: var(--color3);
     color: var(--color1)
 }
+
 .sub_titulo2 {
     font-weight: bold;
     font-size: 27px;
@@ -174,9 +199,8 @@ background-color: #ffebda;
     text-align: center;
 }
 
-.card {
-    margin: 25px 50px;
-}
+
+
 
 .card1 {
     margin-left: 25px;
@@ -220,7 +244,7 @@ background-color: #ffebda;
 
 .container-team {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-left: 15px;
     margin-top: 35px;
@@ -239,20 +263,62 @@ background-color: #ffebda;
 
 
 .team-imgs {
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    position: relative;
+    border-radius: 50%;
     margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    transition: transform 250ms, opacity 250ms, border-radius 250ms; 
+}
+
+.team-imgs:before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.team-imgs:hover:before {
+    opacity: 1;
+}
+
+.team-imgs img {
+    display: block;
+    max-width: 100%;
+}
+
+.team-imgs:hover {
+    transform: scale(1.025);
+    opacity: 0.8;
+    border-radius: 15%;
+}
+.txt-hover:hover{
+    transform: scale(1.025);
 }
 
 .img-tips {
-    border-top-right-radius: 3%;
-    border-top-left-radius: 3%;
-    border-bottom-right-radius: 3%;
-    border-bottom-left-radius: 3%;
+    border-radius: 3%;
+}
+
+.carousel-item {
+    $carousel-control-color: $white;
+    $carousel-control-width: 15%;
+    $carousel-control-opacity: .5;
+    $carousel-control-hover-opacity: .9;
+    $carousel-control-transition: opacity .15s ease;
+}
+
+.card {
+    margin: 25px 50px;
+    border: 3px solid rgba(109, 114, 121, .2);
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -408,6 +474,7 @@ background-color: #ffebda;
     }
 
 }
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .navbarBg {
         background-color: transparent;
@@ -437,6 +504,7 @@ background-color: #ffebda;
     }
 
 }
+
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
     .navbarBg {
         background-color: transparent;
@@ -466,11 +534,13 @@ background-color: #ffebda;
     }
 
 }
+
 @media screen and (min-width: 1440px) {
     .navbarBg {
-        background-color: var(--color1) ;
-    position: fixed;
-z-index: 1;}
+        background-color: var(--color1);
+        position: fixed;
+        z-index: 1;
+    }
 
     .carousel,
     .navbar {
