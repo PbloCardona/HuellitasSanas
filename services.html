@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
     <title>Servicios</title>
-
-
 </head>
 
 <body class="color-bg-body">
@@ -23,7 +19,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a href="index.html">
-                <img src="./img/perro_ico.png" alt="vete" class="img-logo">
+                    <img src="./img/perro_ico.png" alt="vete" class="img-logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -46,8 +42,9 @@
                             <a class="nav-link" href="team.html">Nuestro Equipo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active2" target="_blank" href="https://api.whatsapp.com/send/?phone=573042721866"><i
-                                    class="fab fa-whatsapp"></i> Contáctanos</a>
+                            <a class="nav-link active2" target="_blank"
+                                href="https://api.whatsapp.com/send/?phone=573042721866"><i class="fab fa-whatsapp"></i>
+                                Contáctanos</a>
                         </li>
                     </ul>
                 </div>
@@ -55,33 +52,90 @@
         </nav>
     </div>
     <!--Fin navbar-->
+    <div class="row justify-content-center">
+        <div class="col-3 bg-info">
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Ayudas Diagnosticas</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Hospitalización</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Urgencias 24 Horas</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Cirugía</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">medicina Preventiva</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Consulta</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Tramite de viaje</a>
+            </div>
+            <div>
+                <img src="./img/gato_ico.png" width="30px" alt="">
+                <a href="" class="text-decoration-none">Laboratorio Clinico</a>
+            </div>
+        </div>
+        <div class="col-6 bg-danger">
+            <div>
+                <div class="d-flex">
+                    <div>
+                        <h2>Ayudas diagnosticas</h2>
+                        <p>El diagnóstico por imagen veterinario consiste en la obtención de imágenes de forma no
+                            invasiva del cuerpo de nuestros animales de compañía gracias a las nuevas tecnologías.
+                            Nuestro servicio de diagnóstico por imagen veterinaria es uno de los mas completos de la
+                            ciudad. Tenemos a su disposición especialistas en el área de imagenología que desarrollan
+                            las diferentes técnicas de imagen que incluyen: Ecografía Especializada, Ecografía de
+                            urgencia, y Radiología digital simple o contrastada</p>
+                    </div>
+                    <img src="./img/Iso.jpg" width="200px" class="rounded-circle">
+                </div>
+                <button class="accordion w-75">Ecografía</button>
+                <div class="panel" style="display: none;">
+                    <p>Es la técnica mas utilizada en medicina veterinaria. Obtiene una imagen gracias a la transmisión
+                        de ultrasonidos de distintos medios. Es una técnica no invasiva, rápida, que permite obtener
+                        imágenes de alta resolución y llegar a un diagnostico definitivo. Nos permite evaluar la
+                        estructura interna de los órganos abdominales, torácicos, musculoesqueléticos y oculares, Se
+                        utiliza en todas las especialidades pudiendo realizarse también toma de muestras (citología y
+                        biopsias) de lesiones identificadas y anestesia/analgesia loco-regional eco guiada.</p>
+                    <div class="text-center" data-aos="zoom-in">
+                        <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()"
+                            style="font-weight: bolder;">
+                            <i class="fab fa-whatsapp"></i> Agenda Tu Cita</button>
+                    </div>
+                </div>
 
+            </div>
+        </div>
 
-
-
-
-    <!--Services-->
-
-    <div class="container-bottom " data-aos="zoom-in">
-        <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bolder;">
-            <i class="fab fa-whatsapp"></i> Agenda Tu Cita</button>
     </div>
 
 
-    <!--funcion boton-->
-    <script>
-        function agendarCita() {
-            window.open("https://api.whatsapp.com/send/?phone=573042721866","_blank")
-        };
-    </script>
-    <!--funcion boton-->
+
+
+    <!--Boton agendar cita-->
+
+    <!-- <div class="container-bottom " data-aos="zoom-in">
+        <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bolder;">
+            <i class="fab fa-whatsapp"></i> Agenda Tu Cita</button>
+    </div> -->
 
 
 
+    <br>
 
-<br>
-
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center"  >
             <img src="img/services1.webp" class="imgs_services">
             <div class="col-md-6">
@@ -95,13 +149,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-
-
-
-
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services2.webp" class="imgs_services">
             <div class="col-md-6">
@@ -114,10 +164,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services3.webp" class="imgs_services">
             <div class="col-md-6">
@@ -130,9 +179,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services4.webp" class="imgs_services">
             <div class="col-md-6">
@@ -148,9 +197,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services5.webp" class="imgs_services">
             <div class="col-md-6">
@@ -161,9 +210,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services6.webp" class="imgs_services">
             <div class="col-md-6">
@@ -176,24 +225,23 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </div> -->
 
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services7.webp" class="imgs_services">
             <div class="col-md-6">
                 <div class="card-body">
                     <h5 class="card-title-services txt-hover">Profilaxis Dental con Anestesia</h5>
-                    <p class="card-text txt-hover">La profilaxis dental con anestesia en mascotas es un procedimiento veterinario que implica la limpieza 
+                    <p class="card-text txt-hover">La profilaxis dental con anestesia en mascotas es un procedimiento
+                        veterinario que implica la limpieza
                         profunda de los dientes y encías de un animal bajo anestesia general</p>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </div> -->
 
-    <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+    <!-- <div class="card  mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="row mx-3 align-items-center">
             <img src="img/services8.webp" class="imgs_services">
             <div class="col-md-6">
@@ -207,21 +255,31 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="container-bottom " data-aos="zoom-in">
-        <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bolder;">
-            <i class="fab fa-whatsapp"></i> Agenda Tu Cita</button>
-    </div>
 
 
     <!--funcion boton-->
     <script>
         function agendarCita() {
-            window.open("https://api.whatsapp.com/send/?phone=573042721866","_blank")
+            window.open("https://api.whatsapp.com/send/?phone=573042721866", "_blank")
         };
+        let boton = document.querySelectorAll(".accordion")
+        let panel = document.querySelectorAll(".panel")
+
+        for (let x = 0; x < boton.length; x++) {
+            boton[x].addEventListener("click", function () {
+                if (panel[x].style.display == "block") {
+                    panel[x].style.display = "none"
+                } else {
+                    panel[x].style.display = "block"
+                }
+            });
+        }
+
     </script>
+
     <!--funcion boton-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -234,16 +292,14 @@
         <section class="mb-4">
             <!-- WhatsApp -->
             <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                href="https://api.whatsapp.com/send/?phone=573042721866"target="_blank" role="button" data-mdb-ripple-color="dark"><i
-                    class="fab fa-whatsapp"></i></a>
+                href="https://api.whatsapp.com/send/?phone=573042721866" target="_blank" role="button"
+                data-mdb-ripple-color="dark"><i class="fab fa-whatsapp"></i></a>
             <!-- Instagram -->
-            <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                href="./blank_page.html"target="_blank" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-link btn-floating btn-sm text-dark m-1" href="./blank_page.html" target="_blank"
+                role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
             <!-- Facebook -->
-            <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-                href="./blank_page.html"target="_blank" role="button"
-                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-link btn-floating btn-sm text-dark m-1" href="./blank_page.html" target="_blank"
+                role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
         </section>
     </div>
     <div class="text-center text-secondary p-3" style="background-color: #421f0b">
