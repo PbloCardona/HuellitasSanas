@@ -4,7 +4,7 @@ mascota va más allá de los chequeos médicos. Somos tu compañero y guía en c
 amigo. Nuestro enfoque va más allá de la atención médica; te ofrecemos un equipo de expertos apasionados que te
 acompañarán en la prevención de situaciones y en la construcción de un vínculo fuerte y duradero con tu mascota.
 Tu satisfacción y la felicidad de tu compañero son nuestra prioridad, y estamos comprometidos a brindarte un
-servicio excepcional que te haga sentir parte de nuestra familia](https://pblocardona.github.io/huellitas-sanas/index.html)https://pblocardona.github.io/huellitas-sanas/index.html
+servicio excepcional que te haga sentir parte de nuestra familia](https://pblocardona.github.io/huellitas-sanas/index.html)
 
 PRESENTACIÓN: rb.gy/vqo5u
 https://puntovet.com.co/
