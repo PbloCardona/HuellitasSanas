@@ -6,7 +6,7 @@
 :root,
 [esquema_colores=principal] {
     --color1: #421f0b;
-    --color2: #fbf0de;
+    --color2: #ffebda;
     --color3: #e2a66a;
     --color4: #cfb0a6;
 }
@@ -112,7 +112,9 @@
     margin-left: 180px;
     font-family: "Comfortaa", sans-serif;
 }
-
+.card{
+    background-color: var(--color2) !important;
+}
 .card1 {
     width: 18rem;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -198,11 +200,12 @@
 }
 
 .servicesBox {
-    background-color: #e4ebf5;
+    background-color: #e4ebf5 !;
 }
 
 .card-body {
     text-align: center;
+    background: var(--color2) !important;
 }
 
 
@@ -316,7 +319,7 @@
 
 
 .card {
-    margin: 25px 50px;
+    margin: 20px;
     border: 3px solid rgba(109, 114, 121, .2);
 
 }
