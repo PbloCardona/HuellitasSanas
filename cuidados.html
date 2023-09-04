@@ -18,11 +18,12 @@
 
 <body class="color-bg-body">
     <div class="container-fluid navbarBg_secondary">
-        <nav class="navbar navbar-expand-lg ">
+        <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-hidden ">
             <div class="container-fluid">
                 <a href="index.html">
-                <img src="./img/gato_ico.png" alt="vete" class="img-logo">
+                    <img src="./img/gato_ico.png" alt="veterinaria_logo" class="img-logo ">
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -31,27 +32,38 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Tips de Cuidado</a>
+                            <a class="nav-link active" href="cuidados.html">Tips de Cuidado</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="team.html">Nuestro Equipo</a>
+                            <a class="nav-link " href="us.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active2" target="_blank" href="https://api.whatsapp.com/send/?phone=573042721866"><i class="fab fa-whatsapp" ></i> Contáctanos</a>
+                            <a class="nav-link " href="blank_page.html">Contáctanos</a>
                         </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link active2" target="_blank"
+                                href="whatsapp_page.html"><i class="fab fa-whatsapp"></i>
+                                Chat</a>
+                        </li>
+
+
+
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
     <!--Fin navbar-->
-<div class="text-center container-services">
+   
+<div class="text-center container-services " style="margin-top: 8%;">
     <div class="card mb-3" style="max-width: 1020px; margin-top: 10px;">
         <div class="row g-0 g-0 justify-content-center align-items-center">
             <div class="col-md-9">
@@ -149,24 +161,54 @@
 <!-- footer -->
 <br><br><br>
 
-<footer class="text-center text-white" style="background-color: #e2a66a;">
-    <div class="container pt-4">
-      <section class="mb-4">
-        <!-- WhatsApp -->
-        <a class="btn btn-link btn-floating btn-sm text-dark m-1" href="https://api.whatsapp.com/send/?phone=573042721866"
-          role="button" target="_blank" data-mdb-ripple-color="dark"><i class="fab fa-whatsapp"></i></a>
-        <!-- Instagram -->
-        <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-          href="./blank_page.html" target="_blank" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-        <!-- Facebook -->
-        <a class="btn btn-link btn-floating btn-sm text-dark m-1"
-          href="./blank_page.html" target="_blank" role="button" data-mdb-ripple-color="dark"><i
-            class="fab fa-facebook-f"></i></a>
-      </section>
+<footer>
+    <div class="container">
+      <section>
+        <footer>
+          <div class="content">
+            <div class="link-boxes">
+              <ul class="box mt-3">
+                <li class="link_name">Servicios</li>
+                <li><a href="./services.html#ayudas-diagnosticas">Ayudas diagnosticas</a></li>
+                <li><a href="./services.html#hospitalizacion">Hospitalización</a></li>
+                <li><a href="./services.html#urgencias">Urgencias 24 Horas</a></li>
+                <li><a href="./services.html#cirugia">Cirugía</a></li>
+              </ul>
+              <ul class="box mt-3">
+                <li class="link_name">Nosotros</li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="./us.html#nuestro_equipo">Nuestro Equipo</a></li>
+                <li><a href="#">Prefrences</a></li>
+                <li><a href="#">Purchase</a></li>
+              </ul>
+              <ul class="box mt-3">
+                <li class="link_name">Atencion 24 Horas</li>
+                <li> <span><i class="fa-solid fa-phone"></i></span><a href="#"> Línea de atención: <br>
+                    (604) 322 3781</a> <br>
+                </li>
+                <li><i class="fab fa-whatsapp"></i><a target="_blank" href="whatsapp_page.html"> (+57) 304
+                    272 1866</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="#"> servicioalcliente@huellitas.com.co</a></li>
+              </ul>
+              <ul class="box">
+                <img class="pointer-block mx-1" src="img/logo2.png" width="85%" alt="">
+                <div class="top">
+                  <div class="media-icons">
+                    <a href="blank_page.html"><i class="fab fa-facebook-f"> </i></a>
+                    <a href="blank_page.html"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="whatsapp_page.html"><i class="fab fa-whatsapp"></i></a>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
     </div>
+  
+  
     <div class="text-center text-secondary p-3" style="background-color: #421f0b">
       © 2023 Copyright: Pablo Cardona
     </div>
   </footer>
+  
   </html>
+  
