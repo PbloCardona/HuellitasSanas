@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
 
   <title>Huellitas Sanas</title>
@@ -21,112 +20,100 @@
 </head>
 
 <body class="color-bg-body">
-
-  <div>
-    <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-hidden ">
+  <div class="container-fluid navbarBg_secondary ">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-          <a href="index.html">
-              <img src="./img/huellitas.png" alt="veterinaria_logo" class="img-logo ">
-          </a>
+        <a href="index.html">
+          <img src="./img/huellitas.png" alt="veterinaria_logo" class="img-logo">
+        </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="services.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="cuidados.html">Tips de Cuidado</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link " href="us.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link " href="blank_page.html">Contáctanos</a>
-                  </li>
-
-
-                  <li class="nav-item">
-                      <a class="nav-link active2" target="_blank"
-                          href="whatsapp_page.html"><i class="fab fa-whatsapp"></i>
-                          Chat</a>
-                  </li>
-
-
-
-              </ul>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cuidados.html">Tips de Cuidado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="team.html">Nuestro Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active2" target="_blank" href="https://api.whatsapp.com/send/?phone=573042721866"><i
+                  class="fab fa-whatsapp"></i> Contáctanos</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-  <!-- <img class="img_index"  src="img/BannerLg_1.png" alt="" width="100%"> -->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2900">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/BannerLg_1.png" class="d-block w-100" width="100%" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/BannerLg_2.png" class="d-block w-100" width="100%" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/BannerLg_3.png" class="d-block w-100" width="100%" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    </nav>
   </div>
-
-
-  </div>
-
+  <!--script para que la navbar se oculte-->
+  <!--
+      <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-scroll-hide");
+        } else {
+          navbar.classList.remove("navbar-scroll-hide");
+        }
+      });
+    </script>
+   -->
+  <!--script navbar-->
   <!--fin navbar-->
 
 
 
+  <!-- carusel-->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"  data-bs-interval="2500">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/banner-1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/banner-2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/banner-3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/banner-4.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+  </div>
+  <!-- carusel-->
+
 
 
   <br><br><br>
-  <div data-aos="zoom-in" data-aos-duration="650" class="text-center ">
-    <h3 class="sub_titulo2 " style="font-size: 45px;">Brindamos Atención 24HRS</h3>
-    <div data-aos="zoom-in" data-aos-duration="650" class="text_info titulo_principal">
-      <h3 class="sub_titulo" style="font-weight: bolder; font-size: 40px;">¡No esperes!
-      </h3>
-      <br>
 
 
 
-
-      <a target="_blank" href="whatsapp_page.html"><button type="button" class="btn btn-primary btn-services"
-          style="font-weight: bold;">
-          <i class="fab fa-whatsapp"></i> Agendar Cita</button></a>
-    </div>
-
-    <br>
-    <h3 class="underline txt-hover" style="font-weight: bolder;"> La salud de tus compañeros es nuestra prioridad</h3>
-    <br><br>
-
-    <br><br><br>
-
-    <div class="text_info titulo_principal">
-      <div data-aos="zoom-in" data-aos-duration="650" class="text_info titulo_principal">
-        <h4 class="tips_color underline txt-hover" style="font-size: large; font-weight: bold; margin-top: 30px;"> Estos
-          son nuestros tips infalibles para
-          cuidar a tu mascota siempre:</h4>
-      </div>
+  <div class="text_info titulo_principal">
+    <div data-aos="zoom-in" data-aos-duration="650" data-aos-once="true" class="text_info titulo_principal">
+      <h3 class="sub_titulo" style="font-weight: bolder; font-size: 40px;">En Huellitas Sanas el bienestar de tu mascota <br></h3>
+      <h3 class="underline txt-hover" style="font-weight: bolder;"> ¡Es nuestra prioridad!</h3>  <br><br>
+      <h4 class="tips_color underline txt-hover" style="font-size: medium; font-weight: bold; margin-top: 30px;" > Estos son algunos tips infalibles para
+        siempre cuidar a tu mascota:</h4>
     </div>
   </div>
+
 
   <!-- tips -->
 
@@ -140,8 +127,7 @@
   <div class="container_cards">
 
     <div class="card1" style="width: 18rem;">
-      <img data-aos="flip-left" data-aos-duration="800" src="./img/tip5.png" class="card-img-top pointer-block"
-        alt="...">
+      <img data-aos="flip-left" data-aos-duration="800" data-aos-once="true"src="./img/tip5.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
 
@@ -151,8 +137,7 @@
     </div>
 
     <div class="card1" style="width: 18rem;">
-      <img data-aos="flip-left" data-aos-duration="800" src="./img/tip1.png" class="card-img-top pointer-block"
-        alt="...">
+      <img data-aos="flip-left" data-aos-duration="800"data-aos-once="true" src="./img/tip1.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
         <p class="card-text card-color">¿Cómo evitar el temido golpe de calor en mi mascota?</p>
@@ -162,8 +147,7 @@
 
 
     <div class="card1" style="width: 18rem;">
-      <img data-aos="flip-left" data-aos-duration="800" src="./img/tip4.png" class="card-img-top pointer-block"
-        alt="...">
+      <img data-aos="flip-left" data-aos-duration="800"data-aos-once="true"src="./img/tip4.png" class="card-img-top" alt="...">
       <br><br>
       <div class="card-body">
 
@@ -172,37 +156,25 @@
       </div>
     </div>
   </div>
+  <br><br>
   <!-- tips -->
 
 
 
-  <div class="text_info titulo_principal">
-    <div data-aos="zoom-in" data-aos-duration="650" class="text_info titulo_principal">
-      <h3 class="sub_titulo" style="font-weight: bolder; font-size: 40px;">En Huellitas Sanas el bienestar de tu
-        mascota
-        <br>
-      </h3>
-      <h3 class="underline txt-hover" style="font-weight: bolder;"> ¡Es nuestra prioridad!</h3> <br><br>
-    </div>
-  </div>
-
-  <br>
-
   <!-- info section -->
   <div class="text_info titulo_principal ">
-    <div data-aos="zoom-in" class="text_info titulo_principal">
-      <h1 style="font-weight: bolder;" data-aos-duration="800">Huellitas Sanas </h1>
+    <div  data-aos="zoom-in" class="text_info titulo_principal">
+      <h1 style="font-weight: bolder;" data-aos-duration="800" >Huellitas Sanas </h1>
       <h3 class="titulo_principal"> Clinica Veterinaria</h3><br>
     </div>
-    <div data-aos-duration="1000" data-aos="zoom-in" class="text_info titulo_principal">
+    <div data-aos-duration="1000" data-aos="zoom-in" data-aos-once="true" class="text_info titulo_principal">
       <p>
 
         En nuestra clínica, no solo cuidamos a tu mascota, sino también a ti, porque entendemos que ser dueño de una
         mascota va más allá de los chequeos médicos, somos tu compañero y guía en cada etapa de la vida de tu peludo
         amigo. <br> Nuestro enfoque va más allá de la atención médica; te ofrecemos un equipo de expertos apasionados
         que te
-        acompañarán en la prevención de situaciones y en la construcción de un vínculo fuerte y duradero con tu
-        mascota.
+        acompañarán en la prevención de situaciones y en la construcción de un vínculo fuerte y duradero con tu mascota.
         <br>
         Tu satisfacción y la felicidad de tu compañero son nuestra prioridad, y estamos comprometidos a brindarte un
         servicio excepcional que te haga sentir parte de nuestra familia
@@ -215,8 +187,8 @@
 
 
   <br><br>
-  <div class="pointer-block imgs_articulo">
-    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="650" class="imgArt"
+  <div class="imgs_articulo" >
+    <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="650"  class="imgArt"
       src="img/img (11).jpg" class="img-fluid" alt="...">
     <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="600" class="imgArt"
       src="img/img (12).jpg" class="img-fluid" alt="...">
@@ -227,62 +199,66 @@
   </div>
 
   <br><br><br><br>
+  <!--boton wpp-->
+  <div data-aos="zoom-in" data-aos-duration="800"  class="text-center ">
+    <h3 class="sub_titulo2 " style="font-size: 45px;">¡Brindamos Atención 24HRS!</h3> <br>
+    <button type="button" class="btn btn-primary btn-services" onclick="agendarCita()" style="font-weight: bold;">
+      <i class="fab fa-whatsapp" ></i> Escribenos
+    </button>
+  </div>
+  <br>
+
+
+  <!--funcion boton-->
+  <script>
+    function agendarCita() {
+       window.open("https://api.whatsapp.com/send/?phone=573042721866","_blank")
+    };
+  </script>
+  <!--funcion boton-->
+  </div>
+
+
+  <!--boton wpp-->
+
 
   <!-- scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carousel = document.getElementById("carouselExampleSlidesOnly");
+      const carouselInstance = new bootstrap.Carousel(carousel, {
+        interval: 3000,
+        pause: false,
+      });
+    });
+  </script>
   <!-- scripts -->
 
 </body>
 <br><br><br>
-<footer>
-  <div class="container">
-    <section>
-      <footer>
-        <div class="content">
-          <div class="link-boxes">
-            <ul class="box mt-3">
-              <li class="link_name">Servicios</li>
-              <li><a href="./services.html#ayudas-diagnosticas">Ayudas diagnosticas</a></li>
-              <li><a href="./services.html#hospitalizacion">Hospitalización</a></li>
-              <li><a href="./services.html#urgencias">Urgencias 24 Horas</a></li>
-              <li><a href="./services.html#cirugia">Cirugía</a></li>
-            </ul>
-            <ul class="box mt-3">
-              <li class="link_name">Nosotros</li>
-              <li><a href="./us.html#nosotros">¿Quienes somos?</a></li>
-              <li><a href="./us.html#nuestro_equipo">Nuestro Equipo</a></li>
-              <li><a href="#">Prefrences</a></li>
-              <li><a href="#">Purchase</a></li>
-            </ul>
-            <ul class="box mt-3">
-              <li class="link_name">Atencion 24 Horas</li>
-              <li> <span><i class="fa-solid fa-phone"></i></span><a href="#"> Línea de atención: <br>
-                  (604) 322 3781</a> <br>
-              </li>
-              <li><i class="fab fa-whatsapp"></i><a target="_blank" href="whatsapp_page.html"> (+57) 304
-                  272 1866</a></li>
-              <li><i class="fa-solid fa-envelope"></i><a href="#"> servicioalcliente@huellitas.com.co</a></li>
-            </ul>
-            <ul class="box">
-              <img class="pointer-block mx-1" src="img/logo2.png" width="85%" alt="">
-              <div class="top">
-                <div class="media-icons">
-                  <a href="blank_page.html"><i class="fab fa-facebook-f"> </i></a>
-                  <a href="blank_page.html"><i class="fab fa-instagram"></i></a>
-                  <a target="_blank" href="whatsapp_page.html"><i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </ul>
-          </div>
-        </div>
+
+<footer class="text-center text-white" style="background-color: #e2a66a;">
+  <div class="container pt-4">
+    <section class="mb-4">
+      <!-- WhatsApp -->
+      <a class="btn btn-link btn-floating btn-sm text-dark m-1" href="https://api.whatsapp.com/send/?phone=573042721866"
+        role="button" target="_blank"data-mdb-ripple-color="dark"><i class="fab fa-whatsapp"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-sm text-dark m-1"
+        href="./blank_page.html" role="button" target="_blank"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-sm text-dark m-1"
+        href="./blank_page.html" target="_blank" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+    </section>
   </div>
-
-
   <div class="text-center text-secondary p-3" style="background-color: #421f0b">
     © 2023 Copyright: Pablo Cardona
   </div>
 </footer>
-
 </html>
