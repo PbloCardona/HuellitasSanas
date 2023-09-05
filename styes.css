@@ -81,7 +81,7 @@
 }
 
 .navbar a:hover {
-    font-weight: bold;
+    font-size: 101%;
     text-decoration-color: #e2a66a;
     text-decoration-skip-ink: auto;
 }

@@ -236,7 +236,9 @@ h6 {
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
-    color: var(--bs-heading-color)
+    color: #421f0b;
+    font-weight: bolder;
+}
 }
 
 .h1,
@@ -385,7 +387,10 @@ sup {
 }
 
 a {
-    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    /* color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)); */
+    color: #421f0b;
+    font-weight: bolder;
+};
     text-decoration: underline
 }
 
@@ -14012,7 +14017,7 @@ fieldset:disabled .btn {
 .btn-primary:active,
 .btn-primary:active:focus {
     color: #fff;
-    background-color: #c8ce65
+    background-color: #e2a66a
 }
 
 .btn-secondary:active,
