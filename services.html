@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./img/perro_ico.png">
-  <link rel="stylesheet" href="styes.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styes.css">
   <title>Servicios</title>
 </head>
 
@@ -45,7 +45,6 @@
                       <a class="nav-link " href="blank_page.html">Contáctanos</a>
                   </li>
 
-
                   <li class="nav-item">
                       <a class="nav-link active2" target="_blank"
                           href="whatsapp_page.html"><i class="fab fa-whatsapp"></i>
@@ -59,10 +58,11 @@
       </div>
   </nav>
   </div>
+
   <!--Fin navbar-->
-  <div class="row justify-content-center mt-5">
-    <div class="col-3 mt-5 " style="align-items: center;">
-      <div class="col-2 position-fixed top-10 start-10 menu">
+  <div class="row justify-content-center my-5 servicio">
+    <div class="col-10 col-md-7 col-lg-3 mt-5 servicio1" style="align-items: center;">
+      <div class="col-md-12 col-lg-2 position-fixed top-10 start-10 menu">
         <div class="link">
           <img src="./img/gato_ico.png" width="30px" alt="">
           <a href="#Ayudas diagnosticas" class=" text-decoration-none">Ayudas Diagnosticas</a>
@@ -96,11 +96,10 @@
           <a href="#LaboratorioClínico" class="text-decoration-none">Laboratorio Clinico</a>
         </div>
       </div>
-    </div>
-
-    <div class="col-6 mt-5">
+    </div>  
+    <div class="col-12 col-md-11 col-lg-6 mt-5">
       <!-- CUADRO 1 -->
-      <div>
+      <div class="menu p-3">
         <div id="Ayudas diagnosticas" class="d-flex ">
           <div>
             <h2>Ayudas diagnosticas</h2>
@@ -191,7 +190,7 @@
       </div>
       <hr><br><br>
       <!-- CUADRO 2 -->
-      <div>
+      <div class="menu p-3">
         <div id="Hospitalización" class="d-flex">
           <div>
             <h2>Hospitalización</h2>
@@ -251,7 +250,7 @@
       </div>
       <hr>
       <!-- CUADRO 3 -->
-      <div>
+      <div class="menu p-3">
         <div id="Urgencias" class="d-flex">
           <div>
             <h2>Urgencias 24 Horas</h2>
@@ -267,7 +266,7 @@
       </div>
       <hr>
       <!-- CUADRO 4 -->
-      <div>
+      <div class="menu p-3">
         <div id="Cirugia" class="d-flex">
           <div>
             <h2>Cirugía</h2>
@@ -317,7 +316,7 @@
       </div>
        <hr>
        <!-- CUADRO 5 -->
-      <div>
+      <div class="menu p-3">
         <div id="MedicinaPreventiva" class="d-flex">
           <div>
             <h2>Medicina Preventiva</h2>
@@ -392,7 +391,7 @@
       </div>
        <hr>
        <!-- CUADRO 6 -->
-      <div>
+      <div class="menu p-3">
         <div id="Consulta" class="d-flex">
           <div>
             <h2>Consulta</h2>
@@ -436,7 +435,7 @@
       </div>
       <hr>
       <!-- CUADRO 7 -->      
-      <div>
+      <div class="menu p-3">
         <div id="TramiteViaje" class="d-flex">
           <div>
             <h2>Trámite de Viaje</h2>
@@ -503,7 +502,7 @@
       </div>
       <hr>
       <!-- CUADRO 8 -->
-      <div>
+      <div class="menu p-3">
         <div id="LaboratorioClínico" class="d-flex">
           <div>
             <h2>Laboratorio Clínico</h2>
@@ -596,7 +595,8 @@
         if (panel[x].style.display == "block") {
           panel[x].style.display = "none"
           boton[x].style.backgroundColor= "#e2a66a"
-          boton[x].style.color= "#421f0b"
+          boton[x].style.color= "#421f0b";
+               
         } else {
           boton[x].style.color= "#e2a66a"
           boton[x].style.backgroundColor= "#421f0b"
