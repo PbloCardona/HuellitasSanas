@@ -575,6 +575,19 @@ footer .bottom-details .bottom_text {
     margin: 5px 15px;
 }
 
+.link:hover{
+    transform: scale(1.1);
+    background-color: rgb(236, 202, 192);
+    border-radius: 15px;
+       
+}
+
+.link a:hover{
+    color: black;
+    text-shadow: 1px 1px #fc7f02;
+    margin: 15px 0px;
+}
+
 
 
 
@@ -588,6 +601,10 @@ footer .bottom-details .bottom_text {
     footer .content .link-boxes .input-box {
         width: 40%;
         margin-top: 10px;
+    }
+
+    .servicio1{
+        position: relative !important;
     }
 }
 
@@ -641,6 +658,24 @@ footer .bottom-details .bottom_text {
     footer .content .link-boxes .input-box {
         width: 100%;
     }
+
+    .box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box>img{
+        order: -1;
+    }
+
+    .menu{
+        text-align: center;
+    }
+
+    .box1{
+        margin-top: 12px !important;
+    }
+
+    
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
