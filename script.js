@@ -1,4 +1,4 @@
-AOS.init(0);
+AOS.init(2000);
 
 
 //nnavbar hidder
