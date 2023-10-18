@@ -157,6 +157,20 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- fin scripts -->
+      <!-- Chat bot-->
+  <script src="//code.tidio.co/ixhwl1hqfpla5rxhfinjxbqczuahwjie.js" async></script>
+  <script>  (function () {
+    function onTidioChatApiReady() {
+        window.tidioChatApi.open();
+    }
+    if (window.tidioChatApi) {
+        window.tidioChatApi.on('ready', onTidioChatApiReady);
+    } else {
+        document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+    }
+})();
+  </script>
+    <!-- Chat bot-->
 </body>
 <!-- footer -->
 <br><br><br>
