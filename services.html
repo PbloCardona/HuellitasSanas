@@ -617,6 +617,20 @@
   window.location.href = "./whatsapp_page.html";
     };
   </script>
+    <!-- Chat bot-->
+  <script src="//code.tidio.co/ixhwl1hqfpla5rxhfinjxbqczuahwjie.js" async></script>
+  <script>  (function () {
+    function onTidioChatApiReady() {
+        window.tidioChatApi.open();
+    }
+    if (window.tidioChatApi) {
+        window.tidioChatApi.on('ready', onTidioChatApiReady);
+    } else {
+        document.addEventListener('tidioChat-ready', onTidioChatApiReady);
+    }
+})();
+  </script>
+    <!-- Chat bot-->
 
 
 
