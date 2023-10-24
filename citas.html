@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico.png">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styes.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <style>
+        body {
+
+            background-color: #fbf0de;
+        }
+
+        .centrado {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #421f0b;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        a {
+            color: #e2a66a;
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <div>
+        <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-hidden ">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="./img/huellitas.png" alt="veterinaria_logo" class="img-logo ">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <span class="md-5">
+        <br><br><br><br>
+
+
+        <div class="centrado container md-5" id="primer_paso"> <br><br><br>
+
+            <img class="texto pointer-block" src="img/ico.png" width="5%"> <br> <br><br><br>
+            <h4> Por favor, <br> Diligencia los siguientes campos:</h4><br><br>
+
+
+            <div class="container">
+                <form class="row g-2">
+                    <div>
+                        <div class="container">
+                            <label for="identificación" class="form-label">Tipo de identificación</label>
+                        </div>
+                        <select class="text-center form-select" required disabled>
+                            <option selected disabled>Cedula de ciudadania</option>
+                        </select>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="col-md-2">
+                        <div class="container">
+                            <label for="identificación" class="form-label">Numero de identificación</label>
+                        </div>
+                        <input type="text" class=" text-center form-control" id="get-id" required>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="col-md-3">
+                        <div class="container">
+                            <label for="identificación" class="form-label">Nombres y apellidos completos:</label>
+                        </div>
+                        <input type="text" class="text-center form-control" id="get-name" required>
+                    </div>
+
+                    <br><br><br>
+                    <div class="col-md-2">
+                        <div class="container">
+                            <label for="telefono" class="form-label">Numero de telefono celular:</label>
+                        </div>
+
+                        <input type="text" class="text-center form-control" id="get-tel" required>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="col-md-2">
+                        <div class="my-4 form-check">
+                            <div class="container">
+                                <input type="checkbox" class="form-check-input" id="get-enviar" required>
+                            </div>
+                            <label class="form-check-label">Acepto termino y condiciones</label>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <div class="col-md-1 my-4">
+                        <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <br><br><br><br><br> <br> <br><br><br><br>
+            <a href="index.html">Regresar a la página de inicio</a>
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="card" style="font-weight: bold; display: none;" id="segundo_paso">
+
+            <div class="card-header">
+                Asignación de citas
+            </div>
+
+            <div class="card-body">
+
+                <div class="card">
+                    <div class="card-header">
+                        Información Personal y de Contacto
+                    </div>
+
+                    <div class="m-4 row g-2">
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label">Tipo y Numero de identificación:</label>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text">CC</span>
+                                <input id="identificacion" type="text" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label mb-4">Nombres y Apellidos:</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="nombre_completo" type="text" class=" text-center form-control" readonly>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label mb-4">Número de telefono:</label>
+                            </div>
+                            <div class="input-group ">
+                                <input id="tel" type="text" class="text-center form-control " readonly>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label mb-4">Correo Electronico:</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="get-email" type="email" class="text-center form-control"
+                                    placeholder="Escribe tu correo" required>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header">
+                        Información De Citas:
+                    </div>
+
+
+                    <div class="m-4" id="select-service" style="display: block;">
+                        <div class="container my-3">
+                            <label for="identificación" class="form-label">Elije un servicio de la lista para
+                                continuar:</label>
+                        </div>
+                        <select id="servicioSelect" class="text-center form-select" required>
+                            <option selected>------</option>
+                            <option value="1">Consulta Medico General</option>
+                            <option value="2">Medicina Preventiva</option>
+                            <option value="3">Ayudas Diagnósticas</option>
+                            <option value="4">Servicio de Etología</option>
+                            <option value="5">Trámite de Viaje</option>
+
+                        </select>
+                        <a href="#" id="btn-ir" class="btn btn-primary mt-4">Continuar</a>
+                    </div>
+
+
+                    <div id="date_pick" style="display: none;" class="my-4">
+                        <form action="" style="display: block;" id="form-calendario">  
+                            <label for="fecha">Elije una fecha y hora:</label>
+                            <input type="datetime-local" id="fecha" name="fecha" min="2023-10-26T08:00" max="2023-10-26T20:00" step="3600">
+                        </form>
+                        <a href="#"  id="fijar-fecha" class="btn btn-primary mt-4">Fijar Fecha</a>
+                    </div>
+
+                    <div id="info-cita" style="display: none;">
+                        <p class="" id="fecha-establecida" style="display: none;">Fecha Elegida:  </p>
+                        <p class="" id="servicio-elegido" style="display: none;">Servicio Elegido:  </p>
+                        <a href="#" id="btn-confirm-cita" class="btn btn-primary mb-4">Continuar</a>
+                    </div>
+
+
+                    <div id="fin" style="display: none;">
+                        <p>¡Listo!</p>
+
+                        <p> La información sobre su cita, <br> 
+                            incluyendo el nombre del médico que le atenderá <br> 
+                            y otras recomendaciones, será enviada a su correo electrónico.</p>
+                        <p id="correo-fin">   </p>
+                        <a href="index.html" id="btn-fin" class="btn btn-primary mb-4">Cerrar</a>
+                    </div>
+
+
+                     
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        </div>
+    </span>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="citas.js"></script>
+
+    <!-- scripts -->
+
+
+</body>
+<br><br>
+<footer>
+    <div class="text-center text-secondary p-3" style="background-color: #421f0b">
+        © 2023 Copyright: Pablo Cardona
+    </div>
+</footer>
+
+
+
+
+</html>
