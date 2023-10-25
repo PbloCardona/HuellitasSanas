@@ -72,48 +72,50 @@
             <h4> Por favor, <br> Diligencia los siguientes campos:</h4><br><br>
 
 
-            <div class="container">
-                <form class="row g-2">
-                    <div>
-                        <div class="container">
+            <div class="container ">
+                <form class="row g-2 d-flex flex-wrap ">
+                    <div class="col-md-2 mx-2">
+                        <div class="container ">
                             <label for="identificación" class="form-label">Tipo de identificación</label>
                         </div>
-                        <select class="text-center form-select" required disabled>
-                            <option selected disabled>Cedula de ciudadania</option>
+                        <select class="text-center form-select border-1 border-dark " required disabled>
+                            <option selected disabled class="">Cedula de ciudadania</option>
                         </select>
                     </div>
 
                     <br><br><br>
 
-                    <div class="col-md-2">
+                    <div class="col-md-3 mx-2">
                         <div class="container">
-                            <label for="identificación" class="form-label">Numero de identificación</label>
+                            <label for="identificación" class="form-label ">Numero de identificación</label>
                         </div>
-                        <input type="text" class=" text-center form-control" id="get-id" required>
+                        <input type="text" class=" text-center form-control border-1 border-dark" id="get-id" required>
                     </div>
 
                     <br><br><br>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 mx-2">
                         <div class="container">
                             <label for="identificación" class="form-label">Nombres y apellidos completos:</label>
                         </div>
-                        <input type="text" class="text-center form-control" id="get-name" required>
+                        <input type="text" class="text-center form-control border-1 border-dark" id="get-name" required>
                     </div>
 
                     <br><br><br>
-                    <div class="col-md-2">
+                    <div class="col-md-2 mx-2">
                         <div class="container">
                             <label for="telefono" class="form-label">Numero de telefono celular:</label>
                         </div>
 
-                        <input type="text" class="text-center form-control" id="get-tel" required>
+                        <input type="text" class="text-center form-control border-1 border-dark" id="get-tel" required>
                     </div>
                     <br><br><br>
 
 
-                    <div class="col-md-2">
-                        <div class="my-4 form-check">
+                    <div class="row mt-4">                        
+                        
+                        <div class="col-md-8 ">
+                            <div class="my-4 form-check">
                             <div class="container">
                                 <input type="checkbox" class="form-check-input" id="get-enviar" required>
                             </div>
@@ -121,10 +123,11 @@
                         </div>
                     </div>
                     <br><br><br>
-
-                    <div class="col-md-1 my-4">
+                    
+                    <div class="col-md-4 my-3">
                         <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
                     </div>
+                </div>
                 </form>
             </div>
 
