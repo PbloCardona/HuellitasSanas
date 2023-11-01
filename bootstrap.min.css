@@ -4179,20 +4179,20 @@ fieldset:disabled .btn {
     padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
     clear: both;
     font-weight: 400;
-    color: #3d7676;
+    color: #ffebda;
     text-align: inherit;
     text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
+    /* white-space: nowrap; */
+    background-color: #421f0b;
     border: 0;
     border-radius: var(--bs-dropdown-item-border-radius, 0)
 }
 
-.dropdown-item:focus,
+/* .dropdown-item:focus,
 .dropdown-item:hover {
     color: var(--bs-dropdown-link-hover-color);
-    background-color: var(--bs-dropdown-link-hover-bg)
-}
+    background-color: #ffebda;
+} */
 
 .dropdown-item.active,
 .dropdown-item:active {
