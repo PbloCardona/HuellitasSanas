@@ -17,6 +17,9 @@ const servicioElegidoP = document.getElementById('servicio-elegido');
 const btnConfirmCita = document.getElementById('btn-confirm-cita');
 const divFin = document.getElementById('fin');
 const correoFinP = document.getElementById('correo-fin');
+let fecha = new Date()
+let hoy=fecha.toUTCString()
+console.log(hoy)
 function verificarCamposEnviar() {
   const idValue = idInput.value.trim();
   const nameValue = nameInput.value.trim();
@@ -76,6 +79,7 @@ btnConfirmCita.addEventListener('click', function(event) {
   infoCita.style.display = 'none';
   divFin.style.display = 'block';
   correoFinP.textContent = `${emailInput.value}`;
+  tomarDatos()
 });
 
 btnIr.addEventListener('click', function(event) {
@@ -151,3 +155,36 @@ function switchTabTitle() {
 }
 
 switchTabTitle();
+
+// arreglo para guardar datos
+let cita = [];
+// llave para guardar datos
+const citas = "huellitas"
+// tomar los datos guardaros en el navegador
+let tomarDatosNavegador = localStorage.getItem(citas);
+// comprobacion de datos guardados previamente
+if (tomarDatosNavegador !== null) {
+    cita = JSON.parse(tomarDatosNavegador)
+}
+// Funcion tomar datos
+function tomarDatos() {
+    // Objeto para recojer los datos del navegador
+    let datos = {
+      id: idInput.value,
+      nombre: nameInput.value,
+      telefono: telInput.value,
+      correo: emailInput.value,
+      cita: servicioSelect.value,
+      fecha: fechaInput.value
+    }
+    guardarDatos(datos)
+    
+};
+
+// Funcion para guardar los datos del navegador
+function guardarDatos(info) {
+  // agregar los datos del jugador al arreglo
+  cita.push(info)
+  // Guardar los datos en el navegador
+  localStorage.setItem(citas, JSON.stringify(cita))
+}
