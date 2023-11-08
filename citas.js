@@ -79,8 +79,11 @@ btnConfirmCita.addEventListener('click', function(event) {
   infoCita.style.display = 'none';
   divFin.style.display = 'block';
   correoFinP.textContent = `${emailInput.value}`;
-  tomarDatos()
+  // tomarDatos()
+  
 });
+
+const hola = 'asdasda $id'
 
 btnIr.addEventListener('click', function(event) {
   event.preventDefault();
@@ -154,37 +157,41 @@ function switchTabTitle() {
   }, 2000);
 }
 
+const { error } = require("console");
+const { connect } = require("http2");
 switchTabTitle();
-
-// arreglo para guardar datos
-let cita = [];
-// llave para guardar datos
-const citas = "huellitas"
-// tomar los datos guardaros en el navegador
-let tomarDatosNavegador = localStorage.getItem(citas);
-// comprobacion de datos guardados previamente
-if (tomarDatosNavegador !== null) {
-    cita = JSON.parse(tomarDatosNavegador)
-}
-// Funcion tomar datos
-function tomarDatos() {
-    // Objeto para recojer los datos del navegador
-    let datos = {
-      id: idInput.value,
-      nombre: nameInput.value,
-      telefono: telInput.value,
-      correo: emailInput.value,
-      cita: servicioSelect.value,
-      fecha: fechaInput.value
-    }
-    guardarDatos(datos)
+// // GUARDAR DATOS EN LOCALSTORAGE
+// // arreglo para guardar datos
+// let cita = [];
+// // llave para guardar datos
+// const citas = "huellitas"
+// // tomar los datos guardaros en el navegador
+// let tomarDatosNavegador = localStorage.getItem(citas);
+// // comprobacion de datos guardados previamente
+// if (tomarDatosNavegador !== null) {
+//     cita = JSON.parse(tomarDatosNavegador)
+// }
+// // Funcion tomar datos
+// function tomarDatos() {
+//     // Objeto para recojer los datos del navegador
+//     let datos = {
+//       id: idInput.value,
+//       nombre: nameInput.value,
+//       telefono: telInput.value,
+//       correo: emailInput.value,
+//       cita: servicioSelect.value,
+//       fecha: fechaInput.value
+//     }
+//     guardarDatos(datos)
     
-};
+// };
 
-// Funcion para guardar los datos del navegador
-function guardarDatos(info) {
-  // agregar los datos del jugador al arreglo
-  cita.push(info)
-  // Guardar los datos en el navegador
-  localStorage.setItem(citas, JSON.stringify(cita))
-}
+// // Funcion para guardar los datos del navegador
+// function guardarDatos(info) {
+//   // agregar los datos del jugador al arreglo
+//   cita.push(info)
+//   // Guardar los datos en el navegador
+//   localStorage.setItem(citas, JSON.stringify(cita))
+// }
+
+
