@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQRS</title>
+    <link rel="icon" type="image/x-icon" href="./img/ico.png">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styes.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <style>
+        body {
+
+            background-color: #fbf0de;
+        }
+
+        .centrado {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #421f0b;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        a {
+            color: #e2a66a;
+        }
+    </style>
+</head>
+
+<body class="">
+    <span class="md-5">
+        <br><br><br><br>
+
+
+        <div class="centrado container md-5" id="primer_paso"> <br><br><br>
+
+            <img class="texto pointer-block" src="img/ico.png" width="5%"> <br> <br><br><br>
+            <h4> Por favor, <br> Diligencia los siguientes campos:</h4><br><br>
+
+
+            <div class="container ">
+                <form class="row g-2 d-flex flex-wrap ">
+                    <div class="col-md-2 mx-2">
+                        <div class="container ">
+                            <label for="identificación" class="form-label">Tipo de identificación</label>
+                        </div>
+                        <select class="text-center form-select border-1 border-dark " required >
+                            <option selected class="">Cedula de ciudadania</option>
+                            <option selected class="">Tarjeta de indentidad</option>
+                            <option selected class="">Cédula de Extranjería </option>
+                            <option selected class="">Carné de Identidad </option>
+                            
+                        </select>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="col-md-3 mx-2">
+                        <div class="container">
+                            <label for="identificación" class="form-label ">Numero de identificación</label>
+                        </div>
+                        <input type="text" class=" text-center form-control border-1 border-dark" id="get-id" required>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="col-md-3 mx-2">
+                        <div class="container ">
+                            <label for="identificación" class="form-label">Nombres y apellidos completos:</label>
+                        </div>
+                        <input type="text" class="text-center form-control border-1 border-dark" id="get-name" required>
+                    </div>
+
+                    <br><br><br>
+                    <div class="col-md-2 mx-2">
+                        <div class="container">
+                            <label for="telefono" class="form-label">Numero de contacto:</label>
+                        </div>
+
+                        <input type="text" class="text-center form-control border-1 border-dark" id="get-tel" required>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="row mt-4">                        
+                        
+                        <div class="col-md-8 ">
+                            <div class="my-4 form-check">
+                            <div class="container">
+                                <input type="checkbox" class="form-check-input" id="get-enviar" required>
+                            </div>
+                            <label class="form-check-label">Acepto termino y condiciones</label>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    
+                    <div class="col-md-4 my-3">
+                        <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+
+
+            <br><br><br><br><br> <br> <br><br><br><br>
+            <a href="index.html">Regresar a la página de inicio</a>
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="card" style="font-weight: bold; display: none;" id="segundo_paso">
+
+            <div class="card-header">
+                Asignación de citas
+            </div>
+
+            <div class="card-body">
+
+                <div class="card">
+                    <div class="card-header">
+                        Información Personal y de Contacto
+                    </div>
+
+                    <div class="m-4 row g-2">
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label">Tipo y Numero de identificación:</label>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-text">CC</span>
+                                <input id="identificacion" type="text" class="form-control" readonly>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label mb-4">Nombres y Apellidos:</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="nombre_completo" type="text" class=" text-center form-control" readonly>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label mb-4">Número de telefono:</label>
+                            </div>
+                            <div class="input-group ">
+                                <input id="tel" type="text" class="text-center form-control " readonly>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="container">
+                                <label class="form-label mb-4">Correo Electronico:</label>
+                            </div>
+                            <div class="input-group">
+                                <input id="get-email" type="email" class="text-center form-control"
+                                    placeholder="Escribe tu correo" required>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header">
+                        Tipo de inquietud
+                    </div>
+
+
+                    <div class="m-4" id="select-service" style="display: block;">
+                        <div class="container my-3">
+                            <label for="identificación" class="form-label">Elije un servicio de la lista para
+                                continuar:</label>
+                        </div>
+                        <select  id="servicioSelect" class="text-center form-select border-1 border-dark" required>
+                            <option selected>Selecione su PQRS</option>
+                            <option value="Peticion">Peticion</option>
+                            <option value="Queja">Queja</option>
+                            <option value="Reclamo">Reclamo</option>
+                            <option value="Sujerencia">Sujerencia</option>
+                          
+
+                        </select>
+                        <a href="#" id="btn-ir" class="btn btn-primary mt-4">Continuar</a>
+                    </div>
+
+
+                    <div id="date_pick" style="display: none;" class="my-4">
+                        <form action="" style="display: block;" id="form-calendario">  
+                            <label style="display: flex; flex-direction: column;" for="fecha">Escriba porfavor su inquietud</label>
+                            <textarea type="text" rows="5" id="fecha" name="fecha"> </textarea>
+                        </form>
+                        <a href="#"  id="fijar-fecha" class="btn btn-primary mt-4">Continuar</a>
+                    </div>
+
+                    <div id="info-cita" style="display: none;">
+                        <p class="" id="fecha-establecida" style="display: none;"></p>
+                        <p class="" id="servicio-elegido" style="display: none;"></p>
+                        <a href="#" id="btn-confirm-cita" class="btn btn-primary mb-4">Continuar</a>
+                    </div>
+
+
+                    <div id="fin" style="display: none;">
+                        <p>¡Listo!</p>
+
+                        <p> La información sobre su <p class="inquitudes"></p>
+                            incluyendo la informacion sobre su caso, <br> 
+                            será enviada a su correo electrónico.</p>
+                        <p id="correo-fin">   </p>
+<!--                         <a href="index.html" id="btn-fin" class="btn btn-primary mb-4">Cerrar</a> -->
+                    </div>
+
+
+                     
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        </div>
+    </span>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="pqrs.js"></script>
+
+    <!-- scripts -->
+
+
+</body>
+<br><br>
+<footer>
+    <div class="text-center text-secondary p-3" style="background-color: #421f0b">
+        © 2023 Copyright: Pablo Cardona
+    </div>
+</footer>
+
+
+
+
+</html>
